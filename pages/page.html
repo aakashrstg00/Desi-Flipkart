@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="../css/design.css">
+    <meta charset="UTF-8">
+    <title>Desi Flipkart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/custom.css">
+    <script src="../libs/angular.min.js"></script>
+    <script src="../libs/angular-route.min.js"></script>
+    <script src="../module/app.js"></script>
+    <script src="../factory/ShoesFactory.js"></script>
+    <script src="../factory/ClothingFactory.js"></script>
+    <script src="../factory/ElecFactory.js"></script>
+    <script src="../routes/route.js"></script>
+    <script src="../controller/clothingcontroller.js"></script>
+    <script src="../controller/shoescontroller.js"></script>
+    <script src="../controller/eleccontroller.js"></script>
+</head>
+
+<body ng-app="ShopModule">
+    <div id="wrapper">
+        <div id="nav">
+            <ul class="center" id="navmenu">
+                <a href="#/shoes">
+                    <li>Shoes</li>
+                </a>
+                <a href="#/clothing">
+                    <li>Clothing</li>
+                </a>
+                <a href="#/electronics">
+                    <li>Electronics</li>
+                </a>
+            </ul>
+        </div>
+        <ng-view id="main"></ng-view>
+        <div id="footer">&nbsp;&nbsp;&nbsp;&nbsp;Terms and Conditions Apply * </div>
+    </div>
+</body>
+
+</html>

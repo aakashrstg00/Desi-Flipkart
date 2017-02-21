@@ -1,0 +1,352 @@
+/*
+Copyright (C) 2013  flyingfisch
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+*/
+
+
+/* NOTE: REMEMBER THAT THIS CSS FILE IS NOT IN THE MAIN DIR, RATHER IN ./css */
+
+
+/*
+palette {
+	blue: #185EA7;
+	lt-blue: #9ABBDE;
+	dk-blue: #15487D;
+
+	orange: #EF6B09;
+	lt-orange: #EFAD65;
+	dk-orange: #AF4D00;
+
+	plum: #99356B;
+	lt-plum: #C599B0;
+	dk-plum: #4E0A2F;
+
+	charcoal: #333;
+}
+*/
+
+
+/* RESET */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* TAGS */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #110000;
+    line-height: 1.5;
+}
+
+a {
+    color: #BE5300;
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -o-transition: 500ms;
+    -ms-transition: 500ms;
+    transition: 500ms;
+}
+
+a:hover {
+    color: #FF6D00;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #EF6B09;
+    text-shadow: #999 0 0 2px;
+}
+
+p {
+    padding-top: 15px;
+}
+
+
+/* CLASSES */
+
+.center {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.button {
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5));
+    background-color: #99356B;
+    padding: 3px 5px;
+    border: 1px solid #4E0A2F;
+    border-radius: 4px;
+    color: #fff;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    -ms-transition: 1s;
+    transition: 1s;
+    font-size: 16px;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.button:hover {
+    background-color: #4E0A2F;
+    color: #fff;
+}
+
+
+/* IDs */
+
+#wrapper {
+    position: relative;
+    min-height: 100%;
+    background: #eee;
+}
+
+#nav {
+    background: #185EA7;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    line-height: 1;
+    border-bottom: 1px solid #15487D;
+    border-radius: 0 0 10px 10px;
+    -webkit-box-shadow: #1A1A1A 0 0 5px;
+    box-shadow: #1A1A1A 0 0 5px;
+    text-shadow: #333 0 0 2px;
+}
+
+#nav a:nth-child(1) {
+    border-left: 1px solid #15487D;
+}
+
+#nav a {
+    display: block;
+    float: left;
+    height: 30px;
+    border-right: 1px solid #15487D;
+    padding: 0 3%;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#nav a:hover {
+    background: #15487D;
+    color: #fff;
+}
+
+#nav li {
+    margin-top: 5px;
+}
+
+#main-block {
+    background: #ffffff url('http://toppagedesign.com/sites/safe-moms/images/backgrounds/background.jpg');
+    position: relative;
+    z-index: 1;
+    top: 10px;
+    height: 350px;
+    padding-top: 30px;
+    /* height of navbar */
+    -webkit-box-shadow: #999 0 5px 25px;
+    box-shadow: #999 0 5px 25px;
+}
+
+#main-block div {
+    /* IE */
+    background: url('../images/backgrounds/opacity-50-50x50.png');
+    /* Everything else */
+    background: rgba(0, 0, 0, 0.5);
+    color: #999;
+    width: 40%;
+    min-width: 300px;
+    max-height: 280px;
+    margin-left: 5%;
+    padding: 30px;
+    border-radius: 15px;
+    text-shadow: #333 0 0 2px;
+    overflow: auto;
+}
+
+#content {
+    padding-top: 15px;
+    padding-bottom: 180px;
+    /* height of footer */
+    min-height: 50px;
+}
+
+#footer {
+    background: #1E4773;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: 100%;
+    border-top: solid 1px #15487D;
+    text-decoration-color: antiquewhite;
+}
+
+body {
+    background-color: #ffffff;
+}
