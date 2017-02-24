@@ -3,7 +3,6 @@
     <select name="SORT" ng-model="sortBy">
         <option value="name" selected>Name</option>
         <option value="price">Price</option>
-        <option value="rating">Rating</option>
     </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <label>Reverse Sort Order</label>
     <input type="checkbox" ng-model="rev"> </div>
@@ -14,7 +13,6 @@
             <br><b> {{obj.name}}</b>
             <br> ₹{{obj.price}}
             <br> Sold By {{obj.vendor}}
-            <br> Rating : {{obj.rating}} star
             <br> In Stock : {{obj.inStock}} </div>
     </li>
 </ul>
