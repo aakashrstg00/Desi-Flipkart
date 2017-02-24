@@ -1,6 +1,5 @@
 app.controller("ElectronicsController", function ($scope, ElecFactory) {
     $scope.welcomemsgelec = "Welcome to Mobile Section!!";
-    $scope.revdisp = ($scope.rev) ? "true" : "false";
     console.log("Checking");
     $scope.sortBy = "name";
     var promise = ElecFactory.getJson();

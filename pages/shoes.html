@@ -5,7 +5,7 @@
         <option value="price">Price</option>
         <option value="rating">Rating</option>
     </select>
-    <input type="checkbox" ng-model="rev"> {{revdisp}} {{rev}}</div>
+    <input type="checkbox" ng-model="rev">Reverse Sort Order</div>
 <ul id="shoeslist">
     <li ng-repeat="obj in result.shoesdata|orderBy:sortBy:rev">
         <div> <img ng-src="{{obj.url}}" alt="No Image">

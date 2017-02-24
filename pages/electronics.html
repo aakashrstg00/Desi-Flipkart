@@ -1,11 +1,12 @@
 <h1>{{welcomemsgelec}}</h1>
-<div> Sort By :
+<div style="float:right"> Sort By :
     <select name="SORT" ng-model="sortBy">
         <option value="name" selected>Name</option>
         <option value="price">Price</option>
         <option value="rating">Rating</option>
-    </select>
-    <input type="checkbox" ng-model="rev"> {{revdisp}} {{rev}}</div>
+    </select> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label>Reverse Sort Order</label>
+    <input type="checkbox" ng-model="rev"> </div>
 <ul id="moblist">
     <li ng-repeat="obj in result.mobiles|orderBy:sortBy:rev">
         <div> <img ng-src="{{obj.image}}" alt="No Image">

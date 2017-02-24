@@ -44,7 +44,7 @@ body {
     width: 100%;
 }
 
-#navmenu>li a {
+#navmenu>li>a {
     display: block;
     color: white;
     text-align: center;
@@ -53,12 +53,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-#navmenu>li>a:hover,
-#navmenu>li>a:visited {
+#navmenu>li>a:hover {
     background-color: #2874a0;
 }
 
-.active {
+.title {
     background-color: #f4f442;
     color: black;
 }
